@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="atlas own logo.png"> 
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); 
+
+ html, body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    background: linear-gradient(to bottom, white, wheat); 
+}
+
+ h1   {color: red;}
+
+ p    {color: red;}
+
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures logo & links are balanced */
+    background-color: white;
+    padding: 10px 20px;
+    height: 70px;
+    width: 100%;
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar stays above content */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 60px; /* Adjust logo size */
+    width: auto;
+    margin-left: 20px; /* Space from the left edge */
+}
+
+/* Navbar Links */
+nav {
+    flex-grow: 1; /* Pushes nav links to the right */
+}
+
+ul {
+    list-style-type: none ;
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+ 
+    width: 100%;
+}
+
+li {
+    margin: 0 15px; /* Adjust spacing between links */
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li a:hover {
+    color: whitesmoke;
+}
+
+</style>
+
+<body>
+<div class="navbar">
+    <div class="logo">
+        <img src="atlas_transparent-removebg-preview.png"Atlas Coffee Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Untitled-1.html">Home</a></li>
+            <li><a href="Member Page.html">Member</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Career</a></li>
+        </ul>
+    </nav>
+</div>
+
+</body>
+</html>

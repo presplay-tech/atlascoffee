@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="atlas_transparent-removebg-preview.png"> <!-- Menambahkan favicon di tab browser -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); 
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, white, wheat); 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures logo & links are balanced */
+    background-color: white;
+    padding: 10px 20px;
+    height: 70px;
+    width: 100%;
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar stays above content */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 60px; /* Adjust logo size */
+    width: auto;
+    margin-left: 20px; /* Space from the left edge */
+}
+
+/* Navbar Links */
+nav {
+    flex-grow: 1; /* Pushes nav links to the right */
+}
+
+ul {
+    list-style-type: none ;
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+ 
+    width: 100%;
+}
+
+li {
+    margin: 0 15px; /* Adjust spacing between links */
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li a:hover {
+    color: whitesmoke;
+}
+
+/* Member Section */
+.member-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.member-section h1 {
+    font-size: 40px;
+    color: black;
+}
+
+.member-section p {
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.membership-form {
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form label {
+    display: block;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.membership-form input, .membership-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.membership-form button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.membership-form button:hover {
+    background: darkred;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center; /* Center the testimonials */
+    gap: 30px; /* Space between testimonials */
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Individual Testimonial Card */
+.testimonial {
+    display: flex;
+    align-items: center; /* Align text and image in one row */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px; /* Adjust width */
+    flex: 1; /* Ensures equal width */
+}
+
+/* Image Styling */
+.testimonial-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Text Content */
+.testimonial-text {
+    flex: 1; /* Takes full available space */
+}
+
+.testimonial-text .quote {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+}
+
+.testimonial-text .name {
+   margin-top: 10px;
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: bold;
+}
+
+.testimonial-text .position {
+   font-size: 14px;
+   color: gray;
+   font-style: italic;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Contact Info */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright Text */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+   
+</style>
+<head>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="atlas_transparent-removebg-preview.png"Atlas Coffee Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Member Page.html">Member</a></li>
+                <li><a href="Team Page.html">Team</a></li>
+                <li><a href="Employee Job Application.html">Career</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<section class="member-section">
+        <h1>Gabung bersama kami dalam program member!</h1>
+        <p>Dapatkan akses pada hal-hal exclusive seperti diskon & promo, serta acara khusus hanya untuk member</p>
+        <p>IDR. 59.000,00 / month</p>
+
+<form action="submit_member.php" method="POST" class="membership-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Alasan Singkat</label>
+            <input type="text" id="message" name="message" required>
+
+            <button type="submit">Apply</button>
+        </form>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonial">
+            <img src="damianus.png" alt="Damianus El Wahyudi" class="testimonial-img">
+            <div class="testimonial-text">
+                <p class="quote">"Gak bakal nyesal buat daftar member di Atlas Coffee for real"</p>
+                <p class="name"><strong>DAMIANUS EL WAHYUDI</strong></p>
+                <p class="position">Loyal Member since 2022</p>
+            </div>
+        </div>
+    
+        <div class="testimonial">
+            <img src="ligun.png" alt="Lionel Gunawan" class="testimonial-img">
+            <div class="testimonial-text">
+                <p class="quote">"Saya suka sekali dengan kopi yang diciptakan Atlas, ketika saya mengetahui mengenai program member, langsung saja gas daftar."</p>
+                <p class="name"><strong>LIONEL GUNAWAN</strong></p>
+                <p class="position">Loyal Member since 2020</p>
+            </div>
+        </div>
+    </section>
+      
+
+</body>
+
+<footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-location">
+                <h3>OUR LOCATION</h3>
+                <p>Jl. Pd. Kopi Raya No.4, RT.7/RW.10, Pd. Kopi, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13460</p> 
+            <div class="footer-contact">
+                <p><strong>Ngobrol disini (WhatsApp Chat Service):</strong> </p> <a href="https://wa.me/08170756865">081-7075-6865</a>
+                <p>Directorate General of Consumer Protection and Trade Compliance, Ministry of Trade of the Republic of Indonesia</p>
+                <p>WhatsApp Diktjen PKTN: 0853-1111-1010</p>
+            </div>
+        </div>
+        
+    <h3> © 2019 Atlas Coffee. All rights reserved.</h3>
+</footer>
+
+</html>

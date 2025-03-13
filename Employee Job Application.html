@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="atlas_transparent-removebg-preview.png"> <!-- Menambahkan favicon di tab browser --> 
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); 
+
+ html, body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    background: linear-gradient(to bottom, white, wheat); 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures logo & links are balanced */
+    background-color: white;
+    padding: 10px 20px;
+    height: 70px;
+    width: 100%;
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar stays above content */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 60px; /* Adjust logo size */
+    width: auto;
+    margin-left: 20px; /* Space from the left edge */
+}
+
+/* Navbar Links */
+nav {
+    flex-grow: 1; /* Pushes nav links to the right */
+}
+
+ul {
+    list-style-type: none ;
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+ 
+    width: 100%;
+}
+
+li {
+    margin: 0 15px; /* Adjust spacing between links */
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li a:hover {
+    color: whitesmoke;
+}
+
+.member-section {
+    text-align: center;
+}
+
+ .footer {
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Contact Info */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright Text */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+</style>
+
+<body>
+<div class="navbar">
+    <div class="logo">
+        <img src="atlas_transparent-removebg-preview.png"Atlas Coffee Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Member Page.html">Member</a></li>
+            <li><a href="Team Page.html">Team</a></li>
+            <li><a href="Employee Job Application.html">Career</a></li>
+        </ul>
+    </nav>
+</div>
+
+<section class="member-section">
+    <img src="Barista Team.webp" height="600">
+    <p>Ingin menjelajahi dunia kopi? Daftarkan diri anda kedalam tim Atlas!</p>
+    <p>Contact Person : Dafa (0812-3345-1503)</p>
+    <p>Full Details in Whatsapp Messages</p>
+
+
+</body>
+
+<footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-location">
+                <h3>OUR LOCATION</h3>
+                <p>Jl. Pd. Kopi Raya No.4, RT.7/RW.10, Pd. Kopi, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13460</p> 
+            <div class="footer-contact">
+                <p><strong>Ngobrol disini (WhatsApp Chat Service):</strong> </p> <a href="https://wa.me/08170756865">081-7075-6865</a>
+                <p>Directorate General of Consumer Protection and Trade Compliance, Ministry of Trade of the Republic of Indonesia</p>
+                <p>WhatsApp Diktjen PKTN: 0853-1111-1010</p>
+            </div>
+        </div>
+        
+        <h3> © 2019 Atlas Coffee. All rights reserved.</h3>
+    </footer>
+
+</html>
